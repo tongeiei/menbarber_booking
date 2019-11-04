@@ -1,0 +1,262 @@
+<div class="content" style="padding-top:3%">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <form>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div style="position: relative;width: 100%;" data-toggle="modal"
+                                data-target=".bd-example-modal-lg">
+                                <div>
+                                    <div class="contain-front-package2"><a><label class="contain-front-label-package">
+                                                <div class="contain-front-package3">
+                                                    <img src="/assets/img/package4.jpg" class="img-front-package">
+                                                </div>
+                                            </label>
+                                            <div class="package-name">CDC สาขา CDC ชั้น2</div>
+                                        </a></div>
+                                </div>
+                                <div>
+                                    <div class="contain-description">
+                                        <div class="contain-description2">
+                                            <a class="text-description">แพ็กเกจตัดโกนเชท
+                                                ให้บริการตัดผมและโกนหนวดพร้อมเชทผม</a></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="contain-price1">
+                                        <div class="contain-price2">
+                                            <span class="package-price">฿
+                                                <!-- -->299</span>
+                                            <!-- <span class="sc-1cvnq8v-0 LvaVC">฿ 2000</span>-->
+                                        </div>
+                                        <div class="_2eijmBCzZJDBqBIxfCByc5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div
+                                style="padding: 10px;background: #d71923;color: #ffffff;height: 200px;border-radius: 9px;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span>
+                                            สาขาลาดพร้าว48 12/45 เขต AAA แขวง BBBB
+                                            จังหวัดกรุงเทพมาหานครใกล้สี่แยกลาดพร้าว
+                                        </span>
+                                    </div>
+                                </div><br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">สาขาบริการ</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>สาขาลาดพร้าว 48 (299 บาท)</option>
+                                                <option>สาขา CDC (250 บาท)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">เริ่มต้น</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">สิ้นสุด</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12" style="text-align: center">
+                                        <button class="btn btn-success" data-toggle="modal"
+                                            data-target=".bd-example-modal-lg" *ngIf="!paid">ชำระเงิน</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                   
+                </form>
+               
+            </div>
+            <div class="col-md-2">
+                    
+                    <div *ngIf="user">
+                            <img src="{{ user.image }}">
+                            <h4>{{ user.name }}</h4>
+                            <p>{{ user.email }}</p>
+                     </div>
+                 
+                    <button class="btn btn-block btn-danger" (click)="signOut()" >ออกจากระบบ</button><br /><br />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8" *ngIf="!paid">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row" style="background: #d71923;color: #ffffff;text-align: center;">
+                                    <div class="col-md-2 center">
+                                        <div class="containner-technician-shcedule">
+                                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                                            <span>
+                                                ช่างสมศักดิ์
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 center">
+                                        <div class="containner-technician-shcedule">
+                                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                                            <span>
+                                                ช่างสมชาย
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 center">
+                                        <div class="containner-technician-shcedule">
+                                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                                            <span>
+                                                ช่างสมศรี
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 center">
+                                        <div class="containner-technician-shcedule">
+                                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                                            <span>
+                                                ช่างสมหมาย
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="box-book-date-inactive">
+                                            <div>ไม่ว่าง</div>
+                                            <div>08.00 - 09.00 น.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="box-book-date-inactive">
+                                            <div>ไม่ว่าง</div>
+                                            <div>08.00 - 09.00 น.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="box-book-date-inactive">
+                                            <div>ไม่ว่าง</div>
+                                            <div>10.00 - 11.00 น.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="box-book-date-inactive">
+                                            <div>ไม่ว่าง</div>
+                                            <div>12.00 - 13.00 น.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="box-book-date-inactive">
+                                            <div>ไม่ว่าง</div>
+                                            <div>12.00 - 13.00 น.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="box-book-date-inactive">
+                                            <div>ไม่ว่าง</div>
+                                            <div>12.00 - 13.00 น.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="box-book-date-inactive">
+                                            <div>ไม่ว่าง</div>
+                                            <div>12.00 - 13.00 น.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-8" *ngIf="paid">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center">
+                                <span class="text-green" style="font-weight: bold">
+                                    สำเร็จ
+                                </span> <br />
+                                <span class="text-green">
+                                    สาขามารถเข้ารับบริการสาขาลาดพร้าว 48
+                                </span> <br />
+                                <span class="text-green">
+                                    ในวันที่ 10 กันยายน 2562 08.00 – 09.00
+                                </span> <br />
+                                <span class="text-green">
+                                    หมายเลข #123456
+                                </span> <br />
+                                <div>
+                                    <img src="/assets/img/qr-booking.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div style="
+            padding: 20px 30px 0px 35px;
+            border-bottom: 1px solid #d71923;
+            background: #d71923;
+            color: #fff;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">ชำระเงิน</h4>
+            </div>
+            <div class="modal-body">
+                <div style="padding: 35px">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: center">
+                            <img src="/assets/img/omise.png" style="
+                                        border: 1px solid #dbdbdb;cursor: pointer" (click)="paidProcess()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
